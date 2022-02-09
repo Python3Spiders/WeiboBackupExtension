@@ -1,0 +1,32 @@
+{
+  "name": "微博备份助手",
+  "short_name": "微博备份",
+  "version": "0.9.1",
+  "manifest_version": 3,
+  "description": "备份自己和他人的微博",
+  "homepage_url": "https://buyixiao.github.io",
+  "icons": {
+    "16": "img/icon.png",
+    "48": "img/icon.png",
+    "128": "img/icon.png"
+  },
+  "action": {
+    "default_title": "微博备份助手",
+    "default_popup": "popup.html",
+    "delault_icon": {
+      "16": "img/icon.png",
+      "48": "img/icon.png",
+      "128": "img/icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "cookies",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://weibo.cn/"
+  ]
+}
